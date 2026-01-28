@@ -50,7 +50,7 @@ class ProcessConsole extends Console
     /**
      * @var int
      */
-    protected $exitCode = self::CODE_SUCCESS;
+    protected int $exitCode = self::CODE_SUCCESS;
 
     /**
      * @return void
