@@ -144,7 +144,7 @@ class ProcessConsole extends Console
     /**
      * @return bool
      */
-    protected function hasError()
+    protected function hasError(): bool
     {
         return $this->exitCode !== static::CODE_SUCCESS;
     }
