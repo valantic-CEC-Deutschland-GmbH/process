@@ -18,13 +18,16 @@ use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 class IntrospectionProcessorPlugin extends AbstractPlugin implements LogProcessorPluginInterface
 {
     /**
+     * Specification:
+     * - Processes log data and returns data after processing.
+     *
      * @api
      *
-     * @param array $data
+     * @param array<string, mixed> $data
      *
      * @return array
      */
-    public function __invoke(array $data): array
+    public function __invoke(array $data)
     {
         return $this->getFactory()->createIntrospectionProcessor()->__invoke($data);
     }
